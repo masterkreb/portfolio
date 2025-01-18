@@ -48,16 +48,17 @@ body {
     text-decoration: none;    
     font-size: 25px;
     color: #000000;
-    display: block;    
+    display: block; 
 }
 
 .sidebar a:hover {
     color: #ffffff;
-    background-color: #a8abad;
+    background-color: #98b7d6;   
 }
 
 .profilbild {
-    border-radius: 5%;
+    border: solid 1px #cacaca;
+    border-radius: 3%;    
     max-width: 90%;
     display: block;   
     margin-left: auto;
@@ -230,7 +231,7 @@ margin: 12px 0;
     }
 
     .sidebar a {
-        font-size: 20px; /* Schriftgröße der Links anpassen */
+        font-size: 20px; /* Schriftgrösse der Links anpassen */
     }
 
     .social-media a {
