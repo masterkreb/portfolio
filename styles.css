@@ -151,8 +151,8 @@ margin: 12px 0;
 
   .contact-box a {
     font-size: 17px;
-    margin: 0; /* Entfernt die Abstände die für die Links entsehen */
-    padding: 0; /* Entfernt die Abstände die für die Links entsehen */
+    margin: 0; /* Entfernt die Abstände, die für die Links entstehen */
+    padding: 0; /* Entfernt die Abstände, die für die Links entstehen */
 }
 
 .contact-box a:hover { /* Deaktiviert den Hover Effekt für den E-Mail Link*/
@@ -208,4 +208,78 @@ margin: 12px 0;
     display: inline-block;
     margin-top: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Seitenleiste und Inhalt untereinander */
+    }
+
+    .sidebar {
+        max-width: 100%; /* Nimmt die volle Breite ein */
+        text-align: center; /* Zentriert den Text */
+        padding: 10px 0;
+    }
+
+    .content {
+        padding: 10px; /* Weniger Padding für kleinere Geräte */
+    }
+
+    .profilbild {
+        max-width: 80%; 
+    }
+
+    .sidebar a {
+        font-size: 20px; /* Schriftgröße der Links anpassen */
+    }
+
+    .social-media a {
+        margin-left: 10px; /* Weniger Abstand zwischen Icons */
+    }
+
+    footer {
+        font-size: 14px; 
+    }
+
+    .contact-box a {
+        font-size: 17px; 
+    }
+    
+    .contact-box a:hover { 
+        font-size: 17px;   
+    }
+    .projekte-bilder img{
+        max-width: 80%; 
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar a {
+        font-size: 18px; 
+    }
+
+    .profilbild {
+        max-width: 70%; 
+    }
+
+    .contact-text p {
+        font-size: 14px; 
+    }
+
+    .contact-box a {
+        font-size: 14px;
+    }
+    
+    .contact-box a:hover {
+        font-size: 14px;  
+
+    }
+    .profilbild {
+        max-width: 70%; 
+    }
+
+    .projekte-bilder img{
+        max-width: 70%; 
+    }
 }
